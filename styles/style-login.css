@@ -1,0 +1,77 @@
+.login-form {
+    margin-top: 60px;
+    padding: 5%;
+    background: #f2b41b;
+    border-radius: 25px;
+}
+
+.login-header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.login-header h2 {
+    color: #737B80;
+}
+
+label {
+    color: #737B80;
+}
+
+.redirect {
+    margin-top: 30px;
+}
+
+#redirect {
+    visibility: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+==============================
+VALIDATION
+==============================
+*/
+
+input[type=email]:invalid {
+    border: 3px solid #D91E18;
+}
+
+input[type=email]:valid {
+    border: 3px solid green;
+}
+
+input[type=password]:invalid {
+    border: 3px solid #D91E18;
+}
+
+input[type=password]:valid {
+    border: 3px solid green;
+}
+
+/*
+==============================
+MEDIA QUERIES
+==============================
+*/
+
+@media (max-width: 758px) {
+    .login-form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .login-form {
+        width: 465px;
+    }
+}
+
+@media (min-width: 768px) {
+    label {
+        margin-right: 10px;
+    }
+}

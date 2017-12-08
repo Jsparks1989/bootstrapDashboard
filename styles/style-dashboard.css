@@ -1,0 +1,54 @@
+.content-box {
+    background-color: #f2b41b;
+}
+
+.sidenav {
+    background-color: #f2b41b;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.page-header-custom {
+    color: #737B80;
+    
+}
+
+span, h4, h2, p {
+    color: #737B80;
+    
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    color: black;
+    padding: 5px;
+}
+
+.btn-custom {
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 550px
+}
+
+/*
+================================
+Media Queries
+================================
+*/
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
