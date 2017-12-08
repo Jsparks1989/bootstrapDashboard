@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+  <!-- style-dashboard.css file -->
+  <link rel="stylesheet" href="styles/style-dashboard.css" />
+    
+</head>
+<body>
+<!-- Navigation ============================================ -->
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="login.html">Brighter Brain</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#chart">Charts</button></li>
+        <li><button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#calender">Calenders</button></li>
+        <li><button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#money">Money</button></li>
+        <li><button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#email">Email</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <a class="nav-header-custom" href="login.html"><h2 style="text-align: center;">Dashboard Example</h2></a>
+      <ul class="nav nav-stacked">
+        <li>
+            <button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#chart">Charts</button>
+        </li>
+          
+        <li>
+            <button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#calender">Calenders</button>
+        </li>
+          
+        <li>
+            <button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#money">Money</button>
+        </li>
+          
+        <li>
+            <button type="button" class="btn btn-default btn-block btn-custom" data-toggle="collapse" data-target="#email">Email</button>
+        </li>
+      </ul>
+      
+      <br>
+   </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <!-- Progress Bar ============================================ -->
+      <div class="content-box well">
+          <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="width:56%">
+                56% Complete (success)
+              </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width:78%">
+                78% Complete (info)
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width:43%">
+                43% Complete (warning)
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                89% Complete (danger)
+            </div>
+          </div>
+      </div>
+      <!-- Four boxes ============================================ -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="content-box content-four well">
+            <img src="img/pie-chart-5-256x256.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>Charts</h4>
+            <div id="chart" class="collapse">Sed elementum diam ligula, tincidunt vehicula eros cursus in. Sed posuere porttitor erat at egestas.</div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-box well">
+            <img src="img/Calendar-4-256x256.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Calenders</h4>
+              <div id="calender" class="collapse">Donec quis ligula eleifend, volutpat magna non, luctus libero. Nullam laoreet mauris at ultricies suscipit.</div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-box well">
+            <img src="img/money-8-256x256.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Money</h4>
+              <div id="money" class="collapse">Fusce in rhoncus sapien. Suspendisse aliquam pretium facilisis. Maecenas tincidunt neque ac vehicula tincidunt. Donec.</div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="content-box well">
+            <img src="img/inbox-mail-1-256x256.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Email</h4>
+              <div id="email" class="collapse">Phasellus non nunc luctus orci tempor aliquam. Interdum et malesuada fames ac ante ipsum primis.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Three Boexes ============================================ -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="content-box well">
+            <p class="bg-primary text-info">Aliquam vel elit consequat, egestas ipsum sit amet.</p>
+            <p class="bg-success text-info">Vivamus quis iaculis dolor. Curabitur laoreet nibh non.</p>
+            <p class="bg-info text-info">Duis metus leo, imperdiet id turpis eu, dignissim.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="content-box well">
+            <p class="bg-warning text-info">Aliquam mattis pellentesque quam, quis viverra dui mollis.</p>
+            <p class="bg-warning text-info">Mauris ut orci hendrerit, condimentum dolor nec, laoreet.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="content-box well">
+              <div class="table-responsive">
+                <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Anna</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Debbie</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>John</td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Two Boxes ============================================ -->
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="content-box well">
+            <img src="img/gauges.jpg" class="img-responsive img-rounded" />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="content-box well">
+            <p class="text-muted">Duis quis ipsum est. Quisque non varius lectus, in malesuada sapien. Integer fringilla mauris eu ipsum gravida, quis lacinia ante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Script files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
